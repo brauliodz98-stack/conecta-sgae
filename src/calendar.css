@@ -1,0 +1,21 @@
+#talkList .talk-month-items{display:block;padding:0;background:#f7faf8}
+.month-calendar-scroll{width:100%;overflow-x:auto;overscroll-behavior-inline:contain;padding:14px;scrollbar-color:#83b397 #eaf2ed;scrollbar-width:thin}
+.month-calendar{min-width:690px}
+.month-weekdays,.month-day-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px}
+.month-weekdays{margin-bottom:7px}
+.month-weekdays span{padding:7px 4px;text-align:center;color:#688077;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}
+.month-day-grid{grid-auto-rows:minmax(105px,1fr)}
+.calendar-day-empty{min-height:1px}
+.calendar-day{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;width:100%;padding:9px;border:1px solid #dce9e2;border-radius:11px;background:#fff;color:#173a30;text-align:left;transition:transform .16s,border-color .16s,box-shadow .16s,background .16s}
+.calendar-day.is-available{cursor:pointer}
+.calendar-day.is-available:hover{z-index:1;transform:translateY(-2px);border-color:#78b994;box-shadow:0 7px 17px #15553b18;background:#fbfffc}
+.calendar-day:focus-visible{outline:3px solid #9bd1ad;outline-offset:2px}
+.calendar-day:disabled{cursor:default;background:#f2f5f3;color:#99a8a1;border-color:#e6ece8}
+.calendar-day-number{display:grid;place-items:center;min-width:25px;height:25px;padding:0 5px;border-radius:8px;background:#eaf5ed;color:#167c52;font:800 11px Manrope,sans-serif}
+.calendar-day:disabled .calendar-day-number{background:#e8eeea;color:#899992}
+.calendar-day-type{align-self:flex-start;border-radius:20px;padding:3px 6px;background:#fff3d7;color:#8b6414;font-size:8px;font-weight:800}
+.calendar-day-topic{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;color:#254c3d;font-size:10px;font-weight:700;line-height:1.35}
+.calendar-day-activity{margin-top:auto;color:#768981;font-size:8.5px;line-height:1.25}
+.calendar-day.is-motivational{border-color:#eadcb5;background:linear-gradient(150deg,#fffdf7,#fff)}
+.calendar-day.is-motivational .calendar-day-number{background:#fbf0d5;color:#876018}
+@media(max-width:650px){.month-calendar-scroll{padding:10px}.month-calendar{min-width:660px}.month-weekdays,.month-day-grid{gap:5px}.month-day-grid{grid-auto-rows:minmax(96px,1fr)}.calendar-day{padding:7px;border-radius:9px}.calendar-day-topic{font-size:9px}.calendar-day-activity{font-size:8px}}
