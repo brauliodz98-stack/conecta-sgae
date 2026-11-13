@@ -1,0 +1,10 @@
+{
+  "name": "Conecta SGAE",
+  "short_name": "Conecta SGAE",
+  "description": "Información que conecta, prevención que protege",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f8f6",
+  "theme_color": "#0b756c",
+  "icons": []
+}
